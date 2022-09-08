@@ -3,6 +3,7 @@ import UsersGrid from "./systemAdmin/components/UsersGrid.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import PrivateRoute from "./PrivateRoute.js";
+import StaffUserRegitration from "./systemAdmin/components/StaffUserRegitration.jsx";
 function App() {
   const theme = createTheme({
     palette: {
@@ -27,9 +28,10 @@ function App() {
   
   return (
     <div >
-    <ThemeProvider theme={theme}>
+      <StaffUserRegitration />
+    {/* <ThemeProvider theme={theme}>
       <Router>
-        {/* <Suspense fallback={<CircularProgress style={{position:"absolute",left:"50%",top:"50%"}}/>}> */}
+      
           <Switch>
             <PrivateRoute path="/login" component={<UserLogin />} />
             <PrivateRoute path="/staff/">
@@ -46,17 +48,16 @@ function App() {
               >
                 <Switch>
                   <Route path="/staff/sysAdmin" component={UsersGrid} />
-                
-              
+
                 </Switch>
               </Route>
             </PrivateRoute>
     
            
           </Switch>
-        {/* </Suspense> */}
+       
       </Router>
-    </ThemeProvider>
+    </ThemeProvider> */}
     </div>
   );
 }
