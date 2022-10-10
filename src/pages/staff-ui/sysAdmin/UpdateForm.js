@@ -48,7 +48,40 @@ function Updateform() {
   const UpdateEmployee = (event) => {
     event.preventDefault();
 
-    
+    //validation for all the input fields
+
+    if (employee.role.length === 0) {
+      alert("Role required");
+      return null;
+    }
+
+    if (employee.firstName.length === 0) {
+      alert("First name is required");
+      return null;
+    }
+
+    if (employee.lastName.length === 0) {
+      alert("Last name is required");
+      return null;
+    }
+
+    if (employee.email.includes("@", 0)) {
+    } else {
+      alert("email should contain a @ sign");
+      return null;
+    }
+
+    if (employee.mobile.length === 10) {
+    } else {
+      alert("Mobile Number should contain 10 digits");
+      return null;
+    }
+
+    if (employee.address.length === 0) {
+      alert("Last name is required");
+      return null;
+    }
+
     empformServices
       .update(employee._id, employee)
       .then((response) => {
