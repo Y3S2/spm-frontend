@@ -12,6 +12,20 @@ import empFormService from "../../../services/empForm.service";
 import { useEffect, useState } from "react";
 import PDF from "../../../components/PDF";
 
+const useStyles = makeStyles({
+  table: {
+    minWidth: 700,
+  },
+  search: {
+    marginTop: 10,
+    marginBottom: 20,
+    height: 30,
+    width: 200,
+    borderRadius: 15,
+    borderColor: "#1976d2",
+    borderWidth: 3
+  },
+});
 
 function EmpList() {
   const [searchTerm, setSearchTerm] = useState("");
