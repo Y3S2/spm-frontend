@@ -4,7 +4,45 @@ import empFormService from "../../../services/empForm.service";
 import { useEffect, useState } from "react";
 
 
-
+const columns = [
+    { 
+      field: "role", 
+      headerName: "Role", 
+      width: 175 
+  },
+    {
+      field: "firstName",
+      headerName: "First name",
+      width: 175,
+      editable: true,
+    },
+    {
+      field: "lastName",
+      headerName: "Last name",
+      width: 175,
+      editable: true,
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      width: 175,
+      editable: true,
+    },
+    {
+      field: "mobile",
+      headerName: "Mobile",
+      // type: "number",
+      width: 150,
+      editable: true,
+    },
+    {
+      field: "address",
+      headerName: "Address",
+      width: 350,
+      editable: true,
+    },
+  
+  ];
 
 function EmpDashboard() {
   const [details, setDetails] = useState([]);
