@@ -23,7 +23,7 @@ export default function Topbar(props) {
                                         key={index}
                                         path={url + "/" + route.path}
                                         exact={route.exact}
-                                        children={<Typography variant="h5">{route.iconlabel}</Typography>}
+                                        children={<Typography variant="h4">{route.iconlabel}</Typography>}
                                     />
 
                                 )
