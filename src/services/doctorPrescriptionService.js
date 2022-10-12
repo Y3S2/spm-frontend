@@ -20,6 +20,10 @@ const remove = id => {
     return http.delete("/prescriptions/" + id);
 };
 
+const getOnePrescription = id => {
+    return http.get("/prescriptions/edit/" + id);
+};
+
 
 
 const PrescriptionDataServices = {
