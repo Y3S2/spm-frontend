@@ -1,9 +1,6 @@
-import React, {lazy, Suspense} from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@material-ui/core";
-import CircularProgress from '@material-ui/core/CircularProgress';
-import PrivateRoute from "./PrivateRoute";
-import Header from "./components/patient-ui/Header/Header";
+import UserLogin from "./systemAdmin/components/UserLogin.jsx";
+import UsersGrid from "./systemAdmin/components/UsersGrid.jsx";
+import StaffUserRegitration from "./systemAdmin/components/StaffUserRegitration.jsx";
 function App() {
   const theme = createTheme({
     palette: {
