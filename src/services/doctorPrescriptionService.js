@@ -12,6 +12,10 @@ const create = data => {
     return http.post("/prescriptions", data);
 };
 
+const update = (id, data) => {
+    return http.put(`/prescriptions/${id}`, data);
+};
+
 
 
 export default PrescriptionDataServices;
