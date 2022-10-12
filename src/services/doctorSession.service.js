@@ -8,7 +8,9 @@ const get = id => {
     return http.get("/sessions/"+ id);
 };
 
-
+const create = data => {
+    return http.post("/sessions", data);
+};
 
 
 const sessionServices = {
