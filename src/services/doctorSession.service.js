@@ -16,7 +16,9 @@ const increaseAppointmentCount = (id) => {
     return http.put(`/sessions/increment/${id}`);
 };
 
-
+const remove = id => {
+    return http.delete("/sessions/" + id);
+};
 
 // const removeAll = () => {
 //     return http.delete(`/sessions`);
