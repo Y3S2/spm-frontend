@@ -71,7 +71,6 @@ function WelcomeMessage() {
         </Slide>
       </Grid>
     </div>
-  );
-}
 
 export default WelcomeMessage;
+
