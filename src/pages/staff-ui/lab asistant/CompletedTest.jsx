@@ -99,13 +99,13 @@ export default function SubbmittedTests() {
   for (const test of tests) {
     rows.push(
       {
-        id: test._id,
-        specimenid: test.specimenid,
-        starteddate: test.starteddate,
-        completeddate: test.completeddate,
-        testtype: test.testtype,
-        patientsname: test.patientsname,
-        status: test.status
+        id:   test._id,
+        specimenid:   test.specimenid,
+        starteddate:   test.starteddate,
+        completeddate:   test.completeddate,
+        testtype:   test.testtype,
+        patientsname:   test.patientsname,
+        status:   test.status
 
       }
     )
