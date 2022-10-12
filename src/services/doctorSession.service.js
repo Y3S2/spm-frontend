@@ -12,6 +12,16 @@ const create = data => {
     return http.post("/sessions", data);
 };
 
+const increaseAppointmentCount = (id) => {
+    return http.put(`/sessions/increment/${id}`);
+};
+
+
+
+// const removeAll = () => {
+//     return http.delete(`/sessions`);
+// };
+
 
 const sessionServices = {
     // getAll,
