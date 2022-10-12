@@ -1,5 +1,5 @@
 import "./sidebar.css";
-
+import ISPIRITHALEI from "../../../assets/1.png";
 import {NavLink} from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ export default function Sidebar(props) {
             <div className="sidebarMenu">
               <div className="logo">
                   <a className="logo1" href={"/staff/"+props.user.role.toLowerCase()}>
-                    {/* <img src={ISPIRITHALEI} alt="brandLogo" className="img-logo" /> */}
+                    <img src={ISPIRITHALEI} alt="brandLogo" className="img-logo" />
                   </a>
               </div>
               <Titles title={props.user}/>
