@@ -38,6 +38,9 @@
   }
   
   .topbarIconContainer {
+    /*position: relative;*/
+    /*cursor: pointer;*/
     color: #00204A;
   }
+  
   

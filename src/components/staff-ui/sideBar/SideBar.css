@@ -1,55 +1,55 @@
 .sidebar{
-    flex: 1;
-    height: calc(100vh - 1.2rem);
-    background-color: #005792;
-    /*position: sticky;*/
-    /*bottom:0.6rem;*/
-    /*top:0.6rem;*/
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    margin: 0.6rem 2rem 0.6rem 0.6rem;
-    border-radius: 20px;
-    
-  }
-  .logo{
-    padding: 20px;
-  }
-  .sidebarWrapper{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-  }
-  .sidebarTitle {
-    
-    margin: 10px;
-    
-  }
-  .sidebarTitle1 {
-    padding: 20px;
-  }
+  flex: 1;
+  height: calc(100vh - 1.2rem);
+  background-color: #9BE5AA;
+  /*position: sticky;*/
+  /*bottom:0.6rem;*/
+  /*top:0.6rem;*/
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  margin: 0.6rem 2rem 0.6rem 0.6rem;
+  border-radius: 20px;
   
-  .sidebarList {
-    list-style: none;
-    margin-top: 20px;
-  }
-  .sidebarListItem {
-    text-decoration: none;
-    color: white;
-    padding: 15px 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 10px 0 0 10px;
+}
+.logo{
+  padding: 20px;
+}
+.sidebarWrapper{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.sidebarTitle {
   
-  }
-  .sidebarIcon{
-    margin-right: 5px;
-    font-size: 18px !important ;
-  }
-  .sidebarListItem.active,
-  .sidebarListItem:hover {
-    transition-duration: 300ms;
-    background-color: rgb(255, 255, 255);
-    color: #005792;
-  }
+  margin: 10px;
+  
+}
+.sidebarTitle1 {
+  padding: 20px;
+}
+
+.sidebarList {
+  list-style: none;
+  margin-top: 20px;
+}
+.sidebarListItem {
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+
+}
+.sidebarIcon{
+  margin-right: 5px;
+  font-size: 18px !important ;
+}
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  transition-duration: 300ms;
+  background-color: rgb(255, 255, 255);
+  color: #005792;
+}
