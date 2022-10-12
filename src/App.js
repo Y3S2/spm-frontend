@@ -1,8 +1,5 @@
 import UserLogin from "./systemAdmin/components/UserLogin.jsx";
 import UsersGrid from "./systemAdmin/components/UsersGrid.jsx";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@material-ui/core";
-import PrivateRoute from "./PrivateRoute.js";
 import StaffUserRegitration from "./systemAdmin/components/StaffUserRegitration.jsx";
 function App() {
   const theme = createTheme({
