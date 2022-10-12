@@ -16,6 +16,20 @@ const update = (id, data) => {
     return http.put(`/prescriptions/${id}`, data);
 };
 
+const remove = id => {
+    return http.delete("/prescriptions/" + id);
+};
 
+
+
+const PrescriptionDataServices = {
+    getAll,
+    get,
+    create,
+    update,
+    getOnePrescription,
+    remove,
+    search
+};
 
 export default PrescriptionDataServices;
